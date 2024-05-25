@@ -9,6 +9,8 @@ do
  for script in  \
   ./sakila/$engine-sakila-db/$engine-sakila-schema.sql \
   ./sakila/$engine-sakila-db/$engine-sakila-insert-data.sql \
+  ./sakila/$engine-sakila-db/$engine-sakila-delete-data.sql \
+  ./sakila/$engine-sakila-db/$engine-sakila-drop-objects.sql \
   ./sql/sakila-update.sql \
   /dev/null
  do
@@ -22,7 +24,7 @@ done
 cd out
 awk '
 /^ +[0-9,]+ +instructions +docker[/][0-9a-f]+/{ ins=$1 }
-/^ +[0-9.]+ +seconds time elapsed/ { printf "%50s %8.3f seconds, %20s instructions \n",FILENAME,$1,ins }
+/^ +[0-9.]+ +seconds time elapsed/ { printf "%-55s %8.3f seconds, %20s instructions \n",FILENAME,$1,ins }
 ' * | sort -nk4
 )
 

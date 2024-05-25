@@ -2,7 +2,7 @@ Container db-engines-cpu-postgres-1  Running
 
  Performance counter stats for 'system wide':
 
-        21,099,238      instructions              docker/ce7331ee8ab128f793e9df4342edef4ae020d21cda5180e09ab78c8fe77aa3ec                                   
+        21,277,634      instructions              docker/4e90dfff0bd52a4610755cbd59d413d92890798a33d7b24f8843b98aea10064b                                   
 
-       1.604160497 seconds time elapsed
+       1.574762094 seconds time elapsed
 

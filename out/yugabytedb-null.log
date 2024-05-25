@@ -2,7 +2,7 @@ Container db-engines-cpu-yugabytedb-1  Running
 
  Performance counter stats for 'system wide':
 
-     1,794,303,537      instructions              docker/23575102ef7a3282a8074a2f85d24706071f089225b039b6f2a67a6a3a688bc7                                   
+        52,122,862      instructions              docker/29076488227e5b168c8c9fb96182b4aae88ecd494451babea0eb16b9743579e8                                   
 
-       1.581895197 seconds time elapsed
+       1.594782210 seconds time elapsed
 
