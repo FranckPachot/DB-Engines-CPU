@@ -35,7 +35,7 @@ and check the elapsed time and CPU instructions
 cd out
 awk '
 /^ +[0-9,]+ +instructions +docker[/][0-9a-f]+/{ ins=$1 }
-/^ +[0-9.]+ +seconds time elapsed/ { printf "%50s %8.3f seconds, %20s instructions \n",FILENAME,$1,ins }
+/^ +[0-9.]+ +seconds time elapsed/ { printf "%-50s %8.3f seconds, %20s instructions \n",FILENAME,$1,ins }
 ' * | sort -nk4
 )
 ```

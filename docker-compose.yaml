@@ -22,6 +22,22 @@ services:
   command: >
       psql -e 
            -h yugabytedb -p 5433 -U yugabyte 
+ cockroachdb:
+  image: cockroachdb/cockroach
+  command: >
+    bash -c "cockroach start-single-node --insecure"
+  healthcheck:
+      interval: 5s
+      timeout: 3s
+      test: cockroach sql --insecure -e ""
+ cockroachdb-cli:
+  image: postgres
+  depends_on:
+   cockroachdb:
+    condition: service_healthy
+  command: >
+      psql -e 
+           -h cockroachdb -p 26257 -U root -d defaultdb
 
  postgres:
   image: postgres

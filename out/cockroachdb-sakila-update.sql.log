@@ -1,0 +1,15 @@
+Container db-engines-cpu-cockroachdb-1  Running
+update payment set amount=amount+1;
+UPDATE 16049
+vacuum;
+ERROR:  at or near "vacuum": syntax error
+DETAIL:  source SQL:
+vacuum
+^
+
+ Performance counter stats for 'system wide':
+
+     2,891,838,629      instructions              docker/9bd396ade1eeb5c39b43108bc72637afa999051e02068459bab0fbc285faa9a1                                   
+
+       1.931793102 seconds time elapsed
+

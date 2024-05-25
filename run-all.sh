@@ -1,5 +1,7 @@
 docker compose down
-for engine in postgres yugabytedb
+docker compose up -d 
+sleep 30
+for engine in postgres yugabytedb cockroachdb
 do
  docker compose up $engine -d --wait
  container=$(docker-compose ps -q "$engine")

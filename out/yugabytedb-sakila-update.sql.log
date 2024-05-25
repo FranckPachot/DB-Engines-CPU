@@ -1,10 +1,17 @@
 Container db-engines-cpu-yugabytedb-1  Running
 update payment set amount=amount+1;
 UPDATE 16049
+vacuum;
+WARNING:  'vacuum' is a beta feature!
+LINE 1: vacuum;
+        ^
+HINT:  Set 'ysql_beta_features' yb-tserver gflag to true to suppress the warning for all beta features.
+VACUUM
+WARNING:  VACUUM will be ignored
 
  Performance counter stats for 'system wide':
 
-    28,178,028,609      instructions              docker/5fb99720a947c4b5d648307a50340b84e2ddcb985a50d809b7be7bb2b373f380                                   
+    30,070,664,231      instructions              docker/23575102ef7a3282a8074a2f85d24706071f089225b039b6f2a67a6a3a688bc7                                   
 
-      24.223517264 seconds time elapsed
+      24.911658227 seconds time elapsed
 
