@@ -1,6 +1,8 @@
 # DB-Engines-CPU
 A tool to measure the CPU usage when running the same workload on different databases (this is not a benchmark)
 
+## Usage
+
 The Docker Compose defines how to start the database engines and their CLI.
 
 For example, you can start YugabyteDB and create the Sakila schema:
@@ -16,8 +18,12 @@ To insert Sakila data and get the number of CPU instructions with perf, we ident
  ls -ld /sys/fs/cgroup/perf_event/docker/$container
   perf stat -e instructions -G docker/$container -a \
    docker compose run -T yugabytedb-cli < ./sakila/yugabytedb-sakila-db/yugabytedb-sakila-insert-data.sql
-
 ```
+It displays the number of CPU instructions counted by `perf stat -e instructions` for the whole engine (group):
+![image](https://github.com/FranckPachot/DB-Engines-CPU/assets/33070466/745f89ae-c5e5-45d2-8718-d09928e574f1)
+
+
+## Run all scripts on all databases
 
 You can run:
 ```
