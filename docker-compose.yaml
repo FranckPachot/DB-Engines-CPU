@@ -1,0 +1,25 @@
+services:
+
+ yugabytedb:
+  image: yugabytedb/yugabyte
+  command: >
+      yugabyted start
+      --background=false
+      --tserver_flags=enable_ysql_conn_mgr=false
+      --tserver_flags=ysql_colocate_database_by_default=true
+      --tserver_flags=yb_enable_read_committed_isolation=true
+      --tserver_flags=enable_deadlock_detection=true
+      --tserver_flags=enable_wait_queues=true
+  healthcheck:
+      interval: 5s
+      timeout: 3s
+      test: postgres/bin/pg_isready -h $$(hostname)
+ yugabytedb-cli:
+  image: postgres
+  depends_on:
+   yugabytedb:
+    condition: service_healthy
+  command: >
+      psql -e 
+           -h yugabytedb -p 5433 -U yugabyte 
+
