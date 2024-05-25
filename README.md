@@ -1,5 +1,9 @@
 # DB-Engines-CPU
-A tool to measure the CPU usage when running the same workload on different databases (this is not a benchmark)
+A tool to measure the CPU usage when running the same workload on different databases 
+⚠️  this is not a benchmark:
+- the configuration of the databases is not tuned
+- what is run on each may not be optimal
+- we account for the background processes during the run so a longer response time counts more of them
 
 ## Usage
 
