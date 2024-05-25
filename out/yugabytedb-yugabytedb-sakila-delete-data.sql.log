@@ -1,0 +1,50 @@
+Container db-engines-cpu-yugabytedb-1  Running
+ALTER TABLE store DROP CONSTRAINT store_manager_staff_id_fkey;
+ALTER TABLE
+ALTER TABLE staff DROP CONSTRAINT staff_address_id_fkey;
+ALTER TABLE
+ALTER TABLE staff DROP CONSTRAINT staff_store_id_fkey;
+ALTER TABLE
+DELETE FROM payment ;
+DELETE 16049
+DELETE FROM rental ;
+DELETE 16044
+DELETE FROM customer ;
+DELETE 599
+DELETE FROM film_category ;
+DELETE 1000
+DELETE FROM film_actor ;
+DELETE 5462
+DELETE FROM inventory ;
+DELETE 4581
+DELETE FROM film ;
+DELETE 1000
+DELETE FROM category ;
+DELETE 16
+DELETE FROM staff ;
+DELETE 2
+DELETE FROM store ;
+DELETE 2
+DELETE FROM actor ;
+DELETE 200
+DELETE FROM address ;
+DELETE 603
+DELETE FROM city ;
+DELETE 600
+DELETE FROM country ;
+DELETE 109
+DELETE FROM language ;
+DELETE 6
+ALTER TABLE staff ADD CONSTRAINT staff_address_id_fkey FOREIGN KEY (address_id) REFERENCES address (address_id) ON UPDATE CASCADE;
+ALTER TABLE
+ALTER TABLE staff ADD CONSTRAINT staff_store_id_fkey FOREIGN KEY (store_id) REFERENCES store (store_id) ON UPDATE CASCADE;
+ALTER TABLE
+ALTER TABLE store ADD CONSTRAINT store_manager_staff_id_fkey FOREIGN KEY (manager_staff_id) REFERENCES staff(staff_id) ON UPDATE CASCADE ON DELETE RESTRICT;
+ALTER TABLE
+
+ Performance counter stats for 'system wide':
+
+ 1,307,586,165,732      instructions              docker/29076488227e5b168c8c9fb96182b4aae88ecd494451babea0eb16b9743579e8                                   
+
+     408.283919111 seconds time elapsed
+

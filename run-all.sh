@@ -11,7 +11,7 @@ do
   ./sakila/$engine-sakila-db/$engine-sakila-insert-data.sql \
   ./sakila/$engine-sakila-db/$engine-sakila-delete-data.sql \
   ./sakila/$engine-sakila-db/$engine-sakila-drop-objects.sql \
-  ./sql/sakila-update.sql \
+  ./sql/*.sql \
   /dev/null
  do
   perf stat -e instructions -G docker/$container -a \

@@ -1,0 +1,12 @@
+Container db-engines-cpu-yugabytedb-1  Running
+create table demo(id bigserial primary key, value float);
+ERROR:  relation "demo" already exists
+create index on demo(value asc);
+CREATE INDEX
+
+ Performance counter stats for 'system wide':
+
+     2,981,951,677      instructions              docker/29076488227e5b168c8c9fb96182b4aae88ecd494451babea0eb16b9743579e8                                   
+
+       4.618707401 seconds time elapsed
+

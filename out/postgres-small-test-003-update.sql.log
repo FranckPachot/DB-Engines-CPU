@@ -1,0 +1,12 @@
+Container db-engines-cpu-postgres-1  Running
+update demo set value=0;
+UPDATE 100000
+vacuum;
+VACUUM
+
+ Performance counter stats for 'system wide':
+
+     4,312,052,110      instructions              docker/4e90dfff0bd52a4610755cbd59d413d92890798a33d7b24f8843b98aea10064b                                   
+
+       2.823717290 seconds time elapsed
+

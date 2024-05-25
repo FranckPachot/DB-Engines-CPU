@@ -1,0 +1,50 @@
+Container db-engines-cpu-cockroachdb-1  Running
+ALTER TABLE store DROP CONSTRAINT store_manager_staff_id_fkey;
+ALTER TABLE
+ALTER TABLE staff DROP CONSTRAINT staff_address_id_fkey;
+ALTER TABLE
+ALTER TABLE staff DROP CONSTRAINT staff_store_id_fkey;
+ALTER TABLE
+DELETE FROM payment ;
+DELETE 16049
+DELETE FROM rental ;
+DELETE 16044
+DELETE FROM customer ;
+DELETE 599
+DELETE FROM film_category ;
+DELETE 1000
+DELETE FROM film_actor ;
+DELETE 5462
+DELETE FROM inventory ;
+DELETE 4581
+DELETE FROM film ;
+DELETE 1000
+DELETE FROM category ;
+DELETE 16
+DELETE FROM staff ;
+DELETE 2
+DELETE FROM store ;
+DELETE 2
+DELETE FROM actor ;
+DELETE 200
+DELETE FROM address ;
+DELETE 603
+DELETE FROM city ;
+DELETE 600
+DELETE FROM country ;
+DELETE 109
+DELETE FROM language ;
+DELETE 6
+ALTER TABLE staff ADD CONSTRAINT staff_address_id_fkey FOREIGN KEY (address_id) REFERENCES address (address_id) ON UPDATE CASCADE;
+ALTER TABLE
+ALTER TABLE staff ADD CONSTRAINT staff_store_id_fkey FOREIGN KEY (store_id) REFERENCES store (store_id) ON UPDATE CASCADE;
+ALTER TABLE
+ALTER TABLE store ADD CONSTRAINT store_manager_staff_id_fkey FOREIGN KEY (manager_staff_id) REFERENCES staff(staff_id) ON UPDATE CASCADE ON DELETE RESTRICT;
+ALTER TABLE
+
+ Performance counter stats for 'system wide':
+
+    39,919,464,918      instructions              docker/50b7ae38ed046a9a834302f37e5ca8f69e4061719fcb08aba55fc9470ea1b26c                                   
+
+       7.772781288 seconds time elapsed
+

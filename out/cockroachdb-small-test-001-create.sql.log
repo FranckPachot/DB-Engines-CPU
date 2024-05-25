@@ -1,0 +1,12 @@
+Container db-engines-cpu-cockroachdb-1  Running
+create table demo(id bigserial primary key, value float);
+create index on demo(value asc);
+ERROR:  relation "defaultdb.public.demo" already exists
+CREATE INDEX
+
+ Performance counter stats for 'system wide':
+
+     4,577,900,779      instructions              docker/50b7ae38ed046a9a834302f37e5ca8f69e4061719fcb08aba55fc9470ea1b26c                                   
+
+       2.341432343 seconds time elapsed
+

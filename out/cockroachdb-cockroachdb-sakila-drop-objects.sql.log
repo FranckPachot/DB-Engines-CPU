@@ -1,0 +1,72 @@
+Container db-engines-cpu-cockroachdb-1  Running
+DROP VIEW customer_list;
+DROP VIEW
+DROP VIEW sales_by_film_category;
+DROP VIEW
+DROP VIEW sales_by_store;
+DROP VIEW
+DROP VIEW staff_list;
+DROP VIEW
+DROP TABLE payment CASCADE;
+DROP TABLE
+DROP TABLE rental CASCADE;
+DROP TABLE
+DROP TABLE inventory CASCADE;
+DROP TABLE
+DROP TABLE film_category CASCADE;
+DROP TABLE
+DROP TABLE film_actor CASCADE;
+DROP TABLE
+DROP TABLE film CASCADE;
+DROP TABLE
+DROP TABLE language CASCADE;
+DROP TABLE
+DROP TABLE customer CASCADE;
+DROP TABLE
+DROP TABLE actor CASCADE;
+DROP TABLE
+DROP TABLE category CASCADE;
+DROP TABLE
+DROP TABLE store CASCADE;
+DROP TABLE
+DROP TABLE address CASCADE;
+DROP TABLE
+DROP TABLE staff CASCADE;
+DROP TABLE
+DROP TABLE city CASCADE;
+DROP TABLE
+DROP TABLE country CASCADE;
+DROP TABLE
+DROP SEQUENCE actor_actor_id_seq;
+DROP SEQUENCE
+DROP SEQUENCE address_address_id_seq;
+DROP SEQUENCE
+DROP SEQUENCE category_category_id_seq;
+DROP SEQUENCE
+DROP SEQUENCE city_city_id_seq;
+DROP SEQUENCE
+DROP SEQUENCE country_country_id_seq;
+DROP SEQUENCE
+DROP SEQUENCE customer_customer_id_seq;
+DROP SEQUENCE
+DROP SEQUENCE film_film_id_seq;
+DROP SEQUENCE
+DROP SEQUENCE inventory_inventory_id_seq;
+DROP SEQUENCE
+DROP SEQUENCE language_language_id_seq;
+DROP SEQUENCE
+DROP SEQUENCE payment_payment_id_seq;
+DROP SEQUENCE
+DROP SEQUENCE rental_rental_id_seq;
+DROP SEQUENCE
+DROP SEQUENCE staff_staff_id_seq;
+DROP SEQUENCE
+DROP SEQUENCE store_store_id_seq;
+DROP SEQUENCE
+
+ Performance counter stats for 'system wide':
+
+    39,612,239,305      instructions              docker/50b7ae38ed046a9a834302f37e5ca8f69e4061719fcb08aba55fc9470ea1b26c                                   
+
+       9.447047180 seconds time elapsed
+

@@ -1,7 +1,7 @@
 Container db-engines-cpu-cockroachdb-1  Running
 update payment set amount=amount+1;
-vacuum;
 ERROR:  relation "payment" does not exist
+vacuum;
 ERROR:  at or near "vacuum": syntax error
 DETAIL:  source SQL:
 vacuum
@@ -9,7 +9,7 @@ vacuum
 
  Performance counter stats for 'system wide':
 
-        58,625,276      instructions              docker/50b7ae38ed046a9a834302f37e5ca8f69e4061719fcb08aba55fc9470ea1b26c                                   
+       187,929,478      instructions              docker/50b7ae38ed046a9a834302f37e5ca8f69e4061719fcb08aba55fc9470ea1b26c                                   
 
-       1.604411301 seconds time elapsed
+       1.652869919 seconds time elapsed
 

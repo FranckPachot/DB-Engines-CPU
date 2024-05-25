@@ -2,7 +2,7 @@ Container db-engines-cpu-cockroachdb-1  Running
 
  Performance counter stats for 'system wide':
 
-     4,632,204,580      instructions              docker/50b7ae38ed046a9a834302f37e5ca8f69e4061719fcb08aba55fc9470ea1b26c                                   
+    15,946,258,115      instructions              docker/50b7ae38ed046a9a834302f37e5ca8f69e4061719fcb08aba55fc9470ea1b26c                                   
 
-       1.690513822 seconds time elapsed
+       1.985639852 seconds time elapsed
 
