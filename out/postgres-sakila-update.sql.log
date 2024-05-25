@@ -1,0 +1,10 @@
+Container db-engines-cpu-postgres-1  Running
+update payment set amount=amount+1;
+UPDATE 16049
+
+ Performance counter stats for 'system wide':
+
+     1,925,050,239      instructions              docker/59aa28f45c747c8dedd535d9ff0f3ee8c1d19925ae4f2ac3e7b2bf83b170a815                                   
+
+       1.719114846 seconds time elapsed
+

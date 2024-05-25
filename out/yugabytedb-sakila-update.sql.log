@@ -1,0 +1,10 @@
+Container db-engines-cpu-yugabytedb-1  Running
+update payment set amount=amount+1;
+UPDATE 16049
+
+ Performance counter stats for 'system wide':
+
+    28,178,028,609      instructions              docker/5fb99720a947c4b5d648307a50340b84e2ddcb985a50d809b7be7bb2b373f380                                   
+
+      24.223517264 seconds time elapsed
+

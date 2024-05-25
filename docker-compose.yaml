@@ -23,3 +23,22 @@ services:
       psql -e 
            -h yugabytedb -p 5433 -U yugabyte 
 
+ postgres:
+  image: postgres
+  environment:
+   - POSTGRES_PASSWORD=postgres
+  healthcheck:
+      interval: 5s
+      timeout: 3s
+      test: pg_isready -h $$(hostname)
+ postgres-cli:
+  image: postgres
+  environment:
+   - PGPASSWORD=postgres
+  depends_on:
+   postgres:
+    condition: service_healthy
+  command: >
+      psql -e 
+           -h postgres -p 5432 -U postgres 
+
