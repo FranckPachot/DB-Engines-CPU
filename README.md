@@ -2,8 +2,8 @@
 A tool to measure the CPU usage when running the same workload on different databases 
 
 ⚠️  this is not a benchmark:
-- the configuration of the databases is not tuned
-- what is run on each may not be optimal
+- the configuration of the databases are not tuned equally
+- what is run on each may not be optimal (especially the Sakila scripts are different for each DB)
 - we account for the background processes during the run so a longer response time counts more of them
 
 ## Usage
@@ -44,3 +44,5 @@ awk '
 ' * | sort -nk4
 )
 ```
+![image](https://github.com/FranckPachot/DB-Engines-CPU/assets/33070466/f3fb5d0f-4e62-42f7-90a5-8f4ce1d29ebb)
+
