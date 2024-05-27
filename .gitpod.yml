@@ -1,0 +1,26 @@
+tasks:
+  - init: |
+      # Start docker-compose in detached mode
+      cd /workspace/DB-Engines-CPU
+      docker-compose up -d
+      cd /workspace
+
+      # Wait for services to start if needed
+      # Add your waiting logic here if necessary
+      
+      # Continue with the rest of the initialization
+      sudo apt-get update
+      sudo apt-get install -y git build-essential libelf-dev libtraceevent-dev
+
+      git clone --depth 1 git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git
+      cd linux-stable/tools/perf
+
+      make NO_LIBTRACEEVENT=1
+
+      sudo cp perf /usr/local/bin/
+
+      cd /workspace
+      sudo rm -rf linux-stable
+
+  - command: |
+      perf --version

@@ -16,8 +16,7 @@ docker compose down
 docker compose up yugabytedb -d --wait
 docker compose run -T yugabytedb-cli < ./sakila/yugabytedb-sakila-db/yugabytedb-sakila-schema.sql
 ```
-docker compose run -T yugabytedb-cli ./sakila/yugabytedb-sakila-db/yugabytedb-sakila-schema.sql
-To insert Sakila data and get the number of CPU instructions with perf, we identify the CGROUP and use `perf`:
+To insert Sakila data and get the number of CPU instructions with Linux Perf Stat, we identify the CGROUP and call `perf` while running the script:
 ```
  container=$(docker-compose ps -q yugabytedb )
  ls -ld /sys/fs/cgroup/perf_event/docker/$container

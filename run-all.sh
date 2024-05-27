@@ -1,7 +1,7 @@
 docker compose down
 docker compose up -d 
 sleep 30
-for engine in postgres yugabytedb cockroachdb
+for engine in $( docker compose ps --format "{{.Service}}" | grep "$1" )
 do
  docker compose up $engine -d --wait
  container=$(docker-compose ps -q "$engine")
@@ -14,6 +14,7 @@ do
   ./sql/*.sql \
   /dev/null
  do
+  [ -f "$script" ] && 
   perf stat -e instructions -G docker/$container -a \
    docker compose run -T $engine-cli < "$script" 2>&1 |
    tee out/$engine-$(basename $script).log
@@ -25,6 +26,6 @@ cd out
 awk '
 /^ +[0-9,]+ +instructions +docker[/][0-9a-f]+/{ ins=$1 }
 /^ +[0-9.]+ +seconds time elapsed/ { printf "%-55s %8.3f seconds, %20s instructions \n",FILENAME,$1,ins }
-' * | sort -nk4
+' $(ls -rt) 
 )
 
