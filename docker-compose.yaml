@@ -19,6 +19,8 @@ services:
   depends_on:
    yugabytedb:
     condition: service_healthy
+  deploy:
+    replicas: 0
   command: >
       psql -e 
            -h yugabytedb -p 5433 -U yugabyte 
@@ -35,9 +37,31 @@ services:
   depends_on:
    cockroachdb:
     condition: service_healthy
+  deploy:
+    replicas: 0
   command: >
       psql -e 
            -h cockroachdb -p 26257 -U root -d defaultdb
+
+ oracle:
+  image: gvenzl/oracle-free:slim
+  environment:
+   - ORACLE_PASSWORD=oracle
+  healthcheck:
+      interval: 5s
+      timeout: 3s
+      test: echo | sqlplus system/oracle@//localhost/FREEPDB1
+  deploy:
+    replicas: 0 # don't start by default - too long
+ oracle-cli:
+  image: container-registry.oracle.com/database/sqlcl:latest
+  depends_on:
+   oracle:
+    condition: service_healthy
+  deploy:
+    replicas: 0 
+  command: >
+      -s system/oracle@//oracle/FREEPDB1
 
  postgres:
   image: postgres
@@ -54,6 +78,8 @@ services:
   depends_on:
    postgres:
     condition: service_healthy
+  deploy:
+    replicas: 0
   command: >
       psql -e 
            -h postgres -p 5432 -U postgres 

@@ -1,0 +1,12 @@
+Container db-engines-cpu-oracle-1  Running
+
+
+Index DEMO_C5 created.
+
+
+ Performance counter stats for 'system wide':
+
+     1,538,806,603      instructions              docker/49e8ef11205905506adc75211adb461c7771016ac8a69347932442c5d6b8294b                                   
+
+       6.296022859 seconds time elapsed
+

@@ -1,0 +1,18 @@
+Container db-engines-cpu-oracle-1  Running
+
+
+100,000 rows inserted.
+
+
+Error starting at line : 2 in command -
+vacuum
+Error report -
+Unknown Command
+
+
+ Performance counter stats for 'system wide':
+
+    16,604,756,059      instructions              docker/49e8ef11205905506adc75211adb461c7771016ac8a69347932442c5d6b8294b                                   
+
+      11.861517982 seconds time elapsed
+
