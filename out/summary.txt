@@ -1,32 +1,4 @@
 
-null.log                                           20,825,450 instructions        postgres 🐘
-null.log                                        2,532,950,286 instructions      yugabytedb ▝▞
-null.log                                       15,946,258,115 instructions     cockroachdb  
-*-sakila-delete-data.sql.log                   10,429,155,053 instructions        postgres 🐘
-*-sakila-delete-data.sql.log                   34,835,972,948 instructions     cockroachdb  
-*-sakila-delete-data.sql.log                1,308,306,982,001 instructions      yugabytedb ▝▞
-
-*-sakila-drop-objects.sql.log                     351,019,097 instructions        postgres 🐘
-*-sakila-drop-objects.sql.log                  14,804,556,678 instructions      yugabytedb ▝▞
-*-sakila-drop-objects.sql.log                  39,327,287,032 instructions     cockroachdb  
-
-*-sakila-insert-data.sql.log                   21,852,049,072 instructions      yugabytedb ▝▞
-*-sakila-insert-data.sql.log                   25,938,272,604 instructions        postgres 🐘
-*-sakila-insert-data.sql.log                   61,450,706,896 instructions     cockroachdb  
-
-*-sakila-schema.sql.log                           274,504,346 instructions        postgres 🐘
-*-sakila-schema.sql.log                        21,710,701,172 instructions      yugabytedb ▝▞
-*-sakila-schema.sql.log                        82,932,281,770 instructions     cockroachdb  
-
-sakila-update.sql.log                              58,370,808 instructions        postgres 🐘
-sakila-update.sql.log                             241,174,807 instructions     cockroachdb  
-sakila-update.sql.log                             691,622,975 instructions      yugabytedb ▝▞
-
-small-test-000-compatibility.sql.log                     22,176,499 instructions        postgres 🐘
-small-test-000-compatibility.sql.log                     42,812,706 instructions     cockroachdb  
-small-test-000-compatibility.sql.log                     60,351,397 instructions      yugabytedb ▝▞
-small-test-000-compatibility.sql.log                  1,677,724,426 instructions          oracle 🅾️ 
-
 small-test-001-create.sql.log                     203,282,124 instructions        postgres 🐘
 small-test-001-create.sql.log                     912,244,313 instructions          oracle 🅾️ 
 small-test-001-create.sql.log                   3,115,717,588 instructions      yugabytedb ▝▞
