@@ -43,7 +43,7 @@ BEGIN{e["postgres"]="🐘";e["oracle"]="🅾️ ";e["yugabytedb"]="▝▞";e["co
 /^ +[0-9,]+ +instructions +docker[/][0-9a-f]+/{ ins=$1 }
 /^ +[0-9.]+ +seconds time elapsed/ { printf "%-30s %30s instructions %15s %1s\n",f[2],ins,f[1],e[f[1]] }
 ' */* | sort  -k1,1 -k2,2n | awk '$1>l{print ""}{print}{l=$1}'
-) | tee out/summary.md
+) | tee out/summary.txt
 ```
 ![image](https://github.com/FranckPachot/DB-Engines-CPU/assets/33070466/f3fb5d0f-4e62-42f7-90a5-8f4ce1d29ebb)
 
