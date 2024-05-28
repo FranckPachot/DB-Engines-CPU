@@ -38,7 +38,7 @@ and check the elapsed time and CPU instructions
 (
 cd out
 awk '
-BEGIN{e["postgres"]="🐘";e["oracle"]="🅾️ ";e["yugabytedb"]="▝▞";e["cockroachdb"]=" ";}
+BEGIN{e["postgres"]="🐘";e["oracle"]="🅾️ ";e["yugabytedb"]="▝▞";e["cockroachdb"]="🪳";}
 { split(FILENAME,f,"/") ; gsub(f[1],"*",f[2]) }
 /^ +[0-9,]+ +instructions +docker[/][0-9a-f]+/{ ins=$1 }
 /^ +[0-9.]+ +seconds time elapsed/ { printf "%-30s %30s instructions %15s %1s\n",f[2],ins,f[1],e[f[1]] }
