@@ -37,15 +37,13 @@ and check the elapsed time and CPU instructions
 ```
 (
 cd out
-for script in ../sql
-do
 awk '
+BEGIN{e["postgres"]="🐘";e["oracle"]="🅾️ ";e["yugabytedb"]="▝▞";e["cockroachdb"]=" ";}
+{ split(FILENAME,f,"/") ; gsub(f[1],"*",f[2]) }
 /^ +[0-9,]+ +instructions +docker[/][0-9a-f]+/{ ins=$1 }
-/^ +[0-9.]+ +seconds time elapsed/ { printf "%-55s %8.3f seconds, %20s instructions \n",FILENAME,$1,ins }
-' *$(basename $script).log | sort -nk4
-echo
-done
-)
+/^ +[0-9.]+ +seconds time elapsed/ { printf "%-30s %30s instructions %15s %1s\n",f[2],ins,f[1],e[f[1]] }
+' */* | sort  -k1,1 -k2,2n | awk '$1>l{print ""}{print}{l=$1}'
+) | tee out/summary.md
 ```
 ![image](https://github.com/FranckPachot/DB-Engines-CPU/assets/33070466/f3fb5d0f-4e62-42f7-90a5-8f4ce1d29ebb)
 
