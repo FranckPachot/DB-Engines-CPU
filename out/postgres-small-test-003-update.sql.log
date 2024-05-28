@@ -6,7 +6,7 @@ VACUUM
 
  Performance counter stats for 'system wide':
 
-     4,312,052,110      instructions              docker/4e90dfff0bd52a4610755cbd59d413d92890798a33d7b24f8843b98aea10064b                                   
+     4,865,863,601      instructions              docker/cc076f7b3586aef8b3693eca0d205114b7cd9701cd9ade54895c15d68918a383                                   
 
-       2.823717290 seconds time elapsed
+       2.954958885 seconds time elapsed
 

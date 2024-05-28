@@ -1,0 +1,12 @@
+Container db-engines-cpu-postgres-1  Running
+insert into demo(value) select generate_series from generate_series(1,100000);
+INSERT 0 100000
+vacuum;
+VACUUM
+
+ Performance counter stats for 'system wide':
+
+     4,640,733,997      instructions              docker/cc076f7b3586aef8b3693eca0d205114b7cd9701cd9ade54895c15d68918a383                                   
+
+       3.161230244 seconds time elapsed
+

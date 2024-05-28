@@ -9,7 +9,7 @@ vacuum
 
  Performance counter stats for 'system wide':
 
-   143,124,029,594      instructions              docker/50b7ae38ed046a9a834302f37e5ca8f69e4061719fcb08aba55fc9470ea1b26c                                   
+   133,136,478,839      instructions              docker/5b9a7043233653fe96ade4593fb577a2ae1628cb0fec9c8cb47c450a74dc4fe5                                   
 
-      36.369273055 seconds time elapsed
+      27.633083365 seconds time elapsed
 

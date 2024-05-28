@@ -1,7 +1,15 @@
+# restart from scratch
+
+
+echo "$*" | grep -- "--restart" &&
+{
 docker compose down
 docker compose up -d 
 sleep 30
-for engine in $( docker compose ps --format "{{.Service}}" | grep "$1" )
+}
+
+# run all scripts for all services up
+for engine in $( docker compose ps --services )
 do
  docker compose up $engine -d --wait
  container=$(docker-compose ps -q "$engine")
@@ -14,10 +22,10 @@ do
   ./sql/*.sql \
   /dev/null
  do
-  [ -f "$script" ] && 
+  [ -f "$script" ] && mkdir -p out/$engine &&
   perf stat -e instructions -G docker/$container -a \
    docker compose run -T $engine-cli < "$script" 2>&1 |
-   tee out/$engine-$(basename $script).log
+   tee out/$engine/$(basename $script).log
  done
 done
 

@@ -1,0 +1,10 @@
+Container db-engines-cpu-cockroachdb-1  Running
+create index demo_c4 on demo(c4 asc);
+CREATE INDEX
+
+ Performance counter stats for 'system wide':
+
+   128,114,096,006      instructions              docker/5b9a7043233653fe96ade4593fb577a2ae1628cb0fec9c8cb47c450a74dc4fe5                                   
+
+      21.305880721 seconds time elapsed
+

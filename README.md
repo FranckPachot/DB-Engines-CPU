@@ -37,10 +37,14 @@ and check the elapsed time and CPU instructions
 ```
 (
 cd out
+for script in ../sql
+do
 awk '
 /^ +[0-9,]+ +instructions +docker[/][0-9a-f]+/{ ins=$1 }
 /^ +[0-9.]+ +seconds time elapsed/ { printf "%-55s %8.3f seconds, %20s instructions \n",FILENAME,$1,ins }
-' * | sort -nk4
+' *$(basename $script).log | sort -nk4
+echo
+done
 )
 ```
 ![image](https://github.com/FranckPachot/DB-Engines-CPU/assets/33070466/f3fb5d0f-4e62-42f7-90a5-8f4ce1d29ebb)

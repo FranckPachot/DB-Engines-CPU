@@ -1,12 +1,12 @@
 Container db-engines-cpu-postgres-1  Running
-create table demo(id bigserial primary key, value float);
-ERROR:  relation "demo" already exists
-create index on demo(value asc);
+create table demo(id int generated always as identity primary key, value float, c1 int, c2 int, c3 int, c4 int, c5 int);
+CREATE TABLE
+create index demo_value on demo(value asc);
 CREATE INDEX
 
  Performance counter stats for 'system wide':
 
-        13,283,897      instructions              docker/4e90dfff0bd52a4610755cbd59d413d92890798a33d7b24f8843b98aea10064b                                   
+       203,282,124      instructions              docker/cc076f7b3586aef8b3693eca0d205114b7cd9701cd9ade54895c15d68918a383                                   
 
-       1.684902956 seconds time elapsed
+       1.681843891 seconds time elapsed
 

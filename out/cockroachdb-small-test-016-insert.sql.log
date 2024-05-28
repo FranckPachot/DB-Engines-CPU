@@ -1,0 +1,15 @@
+Container db-engines-cpu-cockroachdb-1  Running
+insert into demo(value) select generate_series from generate_series(1,100000);
+INSERT 0 100000
+vacuum;
+ERROR:  at or near "vacuum": syntax error
+DETAIL:  source SQL:
+vacuum
+^
+
+ Performance counter stats for 'system wide':
+
+   303,081,760,816      instructions              docker/5b9a7043233653fe96ade4593fb577a2ae1628cb0fec9c8cb47c450a74dc4fe5                                   
+
+     149.597587066 seconds time elapsed
+

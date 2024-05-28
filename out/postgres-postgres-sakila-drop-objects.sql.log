@@ -102,7 +102,7 @@ DROP DOMAIN
 
  Performance counter stats for 'system wide':
 
-       351,280,348      instructions              docker/4e90dfff0bd52a4610755cbd59d413d92890798a33d7b24f8843b98aea10064b                                   
+       351,019,097      instructions              docker/cc076f7b3586aef8b3693eca0d205114b7cd9701cd9ade54895c15d68918a383                                   
 
-       1.631405469 seconds time elapsed
+       1.652917449 seconds time elapsed
 

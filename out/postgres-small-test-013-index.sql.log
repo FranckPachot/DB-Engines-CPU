@@ -1,0 +1,10 @@
+Container db-engines-cpu-postgres-1  Running
+create index demo_c2 on demo(c2 asc);
+CREATE INDEX
+
+ Performance counter stats for 'system wide':
+
+       722,461,477      instructions              docker/cc076f7b3586aef8b3693eca0d205114b7cd9701cd9ade54895c15d68918a383                                   
+
+       1.669657561 seconds time elapsed
+

@@ -1,0 +1,29 @@
+Container db-engines-cpu-postgres-1  Running
+drop table if exists demo;
+NOTICE:  table "demo" does not exist, skipping
+DROP TABLE
+alias vacuum=prompt;
+ERROR:  syntax error at or near "alias"
+LINE 1: alias vacuum=prompt;
+        ^
+create or replace function generate_series( "start" in int, "stop" in int )
+  return varchar2 SQL_MACRO(TABLE) as
+begin
+ return 'select to_number(column_value) as generate_series from xmltable('''
+  ||generate_series."start"||' to '||generate_series."stop"
+  ||''')';
+end;
+ERROR:  syntax error at or near "SQL_MACRO"
+LINE 2:   return varchar2 SQL_MACRO(TABLE) as
+                          ^
+/
+ERROR:  syntax error at or near "/"
+LINE 1: /
+        ^
+
+ Performance counter stats for 'system wide':
+
+        22,176,499      instructions              docker/cc076f7b3586aef8b3693eca0d205114b7cd9701cd9ade54895c15d68918a383                                   
+
+       1.611018084 seconds time elapsed
+

@@ -1,0 +1,33 @@
+Container db-engines-cpu-cockroachdb-1  Running
+drop table if exists demo;
+DROP TABLE
+alias vacuum=prompt;
+ERROR:  at or near "alias": syntax error
+DETAIL:  source SQL:
+alias vacuum=prompt
+^
+create or replace function generate_series( "start" in int, "stop" in int )
+  return varchar2 SQL_MACRO(TABLE) as
+begin
+ return 'select to_number(column_value) as generate_series from xmltable('''
+  ||generate_series."start"||' to '||generate_series."stop"
+  ||''')';
+end;
+ERROR:  at or near "return": syntax error
+DETAIL:  source SQL:
+create or replace function generate_series( "start" in int, "stop" in int )
+  return varchar2 SQL_MACRO(TABLE) as
+  ^
+HINT:  try \h CREATE FUNCTION
+/
+ERROR:  at or near "/": syntax error
+DETAIL:  source SQL:
+/
+^
+
+ Performance counter stats for 'system wide':
+
+        42,812,706      instructions              docker/5b9a7043233653fe96ade4593fb577a2ae1628cb0fec9c8cb47c450a74dc4fe5                                   
+
+       1.478023133 seconds time elapsed
+

@@ -332,7 +332,7 @@ ANALYZE
 
  Performance counter stats for 'system wide':
 
-    21,562,063,683      instructions              docker/29076488227e5b168c8c9fb96182b4aae88ecd494451babea0eb16b9743579e8                                   
+    21,852,049,072      instructions              docker/a754a646b3b28e6bc2bd39ea2a9e75f8071efcb7046d706f5df540e1899727b6                                   
 
-      10.782792729 seconds time elapsed
+      11.062915994 seconds time elapsed
 

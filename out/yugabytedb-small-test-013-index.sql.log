@@ -1,0 +1,10 @@
+Container db-engines-cpu-yugabytedb-1  Running
+create index demo_c2 on demo(c2 asc);
+CREATE INDEX
+
+ Performance counter stats for 'system wide':
+
+    23,343,848,866      instructions              docker/a754a646b3b28e6bc2bd39ea2a9e75f8071efcb7046d706f5df540e1899727b6                                   
+
+      10.451827819 seconds time elapsed
+
