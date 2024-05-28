@@ -1,70 +1,70 @@
 
-small-test-001-create.sql.log                     203,282,124 instructions        postgres 🐘
-small-test-001-create.sql.log                     912,244,313 instructions          oracle 🅾️ 
-small-test-001-create.sql.log                   3,115,717,588 instructions      yugabytedb ▝▞
-small-test-001-create.sql.log                   6,255,588,511 instructions     cockroachdb 🪳
+small-test-001-create.sql.log                    203,282,124 instructions in    1.7s        postgres 🐘
+small-test-001-create.sql.log                    912,244,313 instructions in    6.1s          oracle 🅾️ 
+small-test-001-create.sql.log                  3,115,717,588 instructions in    4.8s      yugabytedb ▝▞
+small-test-001-create.sql.log                  6,255,588,511 instructions in    2.2s     cockroachdb 🪳
 
-small-test-002-insert.sql.log                   2,572,867,119 instructions        postgres 🐘
-small-test-002-insert.sql.log                  16,704,929,191 instructions          oracle 🅾️ 
-small-test-002-insert.sql.log                  23,290,104,346 instructions      yugabytedb ▝▞
-small-test-002-insert.sql.log                 233,972,480,189 instructions     cockroachdb 🪳
+small-test-002-insert.sql.log                  2,572,867,119 instructions in    2.3s        postgres 🐘
+small-test-002-insert.sql.log                 16,704,929,191 instructions in   11.6s          oracle 🅾️ 
+small-test-002-insert.sql.log                 23,290,104,346 instructions in    5.6s      yugabytedb ▝▞
+small-test-002-insert.sql.log                233,972,480,189 instructions in  194.2s     cockroachdb 🪳
 
-small-test-003-update.sql.log                   4,865,863,601 instructions        postgres 🐘
-small-test-003-update.sql.log                  39,749,875,442 instructions      yugabytedb ▝▞
-small-test-003-update.sql.log                  89,643,425,781 instructions          oracle 🅾️ 
-small-test-003-update.sql.log                 133,136,478,839 instructions     cockroachdb 🪳
+small-test-003-update.sql.log                  4,865,863,601 instructions in    3.0s        postgres 🐘
+small-test-003-update.sql.log                 39,749,875,442 instructions in    8.2s      yugabytedb ▝▞
+small-test-003-update.sql.log                 89,643,425,781 instructions in   18.5s          oracle 🅾️ 
+small-test-003-update.sql.log                133,136,478,839 instructions in   27.6s     cockroachdb 🪳
 
-small-test-004-delete.sql.log                     545,978,631 instructions        postgres 🐘
-small-test-004-delete.sql.log                  30,881,200,692 instructions      yugabytedb ▝▞
-small-test-004-delete.sql.log                  72,025,408,307 instructions          oracle 🅾️ 
-small-test-004-delete.sql.log                  84,491,229,763 instructions     cockroachdb 🪳
+small-test-004-delete.sql.log                    545,978,631 instructions in    1.7s        postgres 🐘
+small-test-004-delete.sql.log                 30,881,200,692 instructions in    4.9s      yugabytedb ▝▞
+small-test-004-delete.sql.log                 72,025,408,307 instructions in   16.3s          oracle 🅾️ 
+small-test-004-delete.sql.log                 84,491,229,763 instructions in   12.9s     cockroachdb 🪳
 
-small-test-010-insert.sql.log                   2,765,553,720 instructions        postgres 🐘
-small-test-010-insert.sql.log                  16,604,756,059 instructions          oracle 🅾️ 
-small-test-010-insert.sql.log                  26,726,907,901 instructions      yugabytedb ▝▞
-small-test-010-insert.sql.log                 281,106,047,200 instructions     cockroachdb 🪳
+small-test-010-insert.sql.log                  2,765,553,720 instructions in    2.4s        postgres 🐘
+small-test-010-insert.sql.log                 16,604,756,059 instructions in   11.9s          oracle 🅾️ 
+small-test-010-insert.sql.log                 26,726,907,901 instructions in    5.6s      yugabytedb ▝▞
+small-test-010-insert.sql.log                281,106,047,200 instructions in  145.5s     cockroachdb 🪳
 
-small-test-011-index.sql.log                      211,314,959 instructions        postgres 🐘
-small-test-011-index.sql.log                      786,058,059 instructions          oracle 🅾️ 
-small-test-011-index.sql.log                   13,709,406,380 instructions      yugabytedb ▝▞
-small-test-011-index.sql.log                   33,305,295,356 instructions     cockroachdb 🪳
+small-test-011-index.sql.log                    211,314,959 instructions in    1.6s        postgres 🐘
+small-test-011-index.sql.log                    786,058,059 instructions in    6.3s          oracle 🅾️ 
+small-test-011-index.sql.log                 13,709,406,380 instructions in    8.3s      yugabytedb ▝▞
+small-test-011-index.sql.log                 33,305,295,356 instructions in    3.4s     cockroachdb 🪳
 
-small-test-012-insert.sql.log                   3,478,947,087 instructions        postgres 🐘
-small-test-012-insert.sql.log                  20,425,687,625 instructions          oracle 🅾️ 
-small-test-012-insert.sql.log                  36,683,698,066 instructions      yugabytedb ▝▞
-small-test-012-insert.sql.log                 307,510,245,095 instructions     cockroachdb 🪳
+small-test-012-insert.sql.log                  3,478,947,087 instructions in    2.7s        postgres 🐘
+small-test-012-insert.sql.log                 20,425,687,625 instructions in   12.3s          oracle 🅾️ 
+small-test-012-insert.sql.log                 36,683,698,066 instructions in    6.7s      yugabytedb ▝▞
+small-test-012-insert.sql.log                307,510,245,095 instructions in  155.2s     cockroachdb 🪳
 
-small-test-013-index.sql.log                      722,461,477 instructions        postgres 🐘
-small-test-013-index.sql.log                      957,933,679 instructions          oracle 🅾️ 
-small-test-013-index.sql.log                   23,343,848,866 instructions      yugabytedb ▝▞
-small-test-013-index.sql.log                   57,800,828,891 instructions     cockroachdb 🪳
+small-test-013-index.sql.log                    722,461,477 instructions in    1.7s        postgres 🐘
+small-test-013-index.sql.log                    957,933,679 instructions in    6.3s          oracle 🅾️ 
+small-test-013-index.sql.log                 23,343,848,866 instructions in   10.5s      yugabytedb ▝▞
+small-test-013-index.sql.log                 57,800,828,891 instructions in    4.7s     cockroachdb 🪳
 
-small-test-014-insert.sql.log                   4,049,848,751 instructions        postgres 🐘
-small-test-014-insert.sql.log                  17,510,915,215 instructions          oracle 🅾️ 
-small-test-014-insert.sql.log                  41,924,215,525 instructions      yugabytedb ▝▞
-small-test-014-insert.sql.log                 295,945,845,936 instructions     cockroachdb 🪳
+small-test-014-insert.sql.log                  4,049,848,751 instructions in    2.7s        postgres 🐘
+small-test-014-insert.sql.log                 17,510,915,215 instructions in   12.0s          oracle 🅾️ 
+small-test-014-insert.sql.log                 41,924,215,525 instructions in    7.7s      yugabytedb ▝▞
+small-test-014-insert.sql.log                295,945,845,936 instructions in  149.4s     cockroachdb 🪳
 
-small-test-015-index.sql.log                      978,857,518 instructions        postgres 🐘
-small-test-015-index.sql.log                    1,168,548,877 instructions          oracle 🅾️ 
-small-test-015-index.sql.log                   37,724,928,032 instructions      yugabytedb ▝▞
-small-test-015-index.sql.log                  103,556,905,722 instructions     cockroachdb 🪳
+small-test-015-index.sql.log                    978,857,518 instructions in    1.7s        postgres 🐘
+small-test-015-index.sql.log                  1,168,548,877 instructions in    6.2s          oracle 🅾️ 
+small-test-015-index.sql.log                 37,724,928,032 instructions in   12.4s      yugabytedb ▝▞
+small-test-015-index.sql.log                103,556,905,722 instructions in    9.7s     cockroachdb 🪳
 
-small-test-016-insert.sql.log                   4,518,930,696 instructions        postgres 🐘
-small-test-016-insert.sql.log                  19,357,874,987 instructions          oracle 🅾️ 
-small-test-016-insert.sql.log                  50,252,476,447 instructions      yugabytedb ▝▞
-small-test-016-insert.sql.log                 303,081,760,816 instructions     cockroachdb 🪳
+small-test-016-insert.sql.log                  4,518,930,696 instructions in    3.0s        postgres 🐘
+small-test-016-insert.sql.log                 19,357,874,987 instructions in   12.2s          oracle 🅾️ 
+small-test-016-insert.sql.log                 50,252,476,447 instructions in    8.6s      yugabytedb ▝▞
+small-test-016-insert.sql.log                303,081,760,816 instructions in  149.6s     cockroachdb 🪳
 
-small-test-017-index.sql.log                    1,241,051,744 instructions        postgres 🐘
-small-test-017-index.sql.log                    1,383,928,977 instructions          oracle 🅾️ 
-small-test-017-index.sql.log                   39,373,559,875 instructions      yugabytedb ▝▞
-small-test-017-index.sql.log                  128,114,096,006 instructions     cockroachdb 🪳
+small-test-017-index.sql.log                  1,241,051,744 instructions in    1.7s        postgres 🐘
+small-test-017-index.sql.log                  1,383,928,977 instructions in    6.4s          oracle 🅾️ 
+small-test-017-index.sql.log                 39,373,559,875 instructions in   16.4s      yugabytedb ▝▞
+small-test-017-index.sql.log                128,114,096,006 instructions in   21.3s     cockroachdb 🪳
 
-small-test-018-insert.sql.log                   4,640,733,997 instructions        postgres 🐘
-small-test-018-insert.sql.log                  18,420,822,603 instructions          oracle 🅾️ 
-small-test-018-insert.sql.log                  58,765,909,752 instructions      yugabytedb ▝▞
-small-test-018-insert.sql.log                 362,741,845,859 instructions     cockroachdb 🪳
+small-test-018-insert.sql.log                  4,640,733,997 instructions in    3.2s        postgres 🐘
+small-test-018-insert.sql.log                 18,420,822,603 instructions in   12.3s          oracle 🅾️ 
+small-test-018-insert.sql.log                 58,765,909,752 instructions in    9.6s      yugabytedb ▝▞
+small-test-018-insert.sql.log                362,741,845,859 instructions in  156.0s     cockroachdb 🪳
 
-small-test-019-index.sql.log                    1,505,724,479 instructions        postgres 🐘
-small-test-019-index.sql.log                    1,538,806,603 instructions          oracle 🅾️ 
-small-test-019-index.sql.log                   47,743,813,801 instructions      yugabytedb ▝▞
-small-test-019-index.sql.log                  107,193,069,949 instructions     cockroachdb 🪳
+small-test-019-index.sql.log                  1,505,724,479 instructions in    1.8s        postgres 🐘
+small-test-019-index.sql.log                  1,538,806,603 instructions in    6.3s          oracle 🅾️ 
+small-test-019-index.sql.log                 47,743,813,801 instructions in   18.5s      yugabytedb ▝▞
+small-test-019-index.sql.log                107,193,069,949 instructions in    9.6s     cockroachdb 🪳
