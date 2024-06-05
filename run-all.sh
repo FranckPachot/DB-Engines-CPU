@@ -35,5 +35,5 @@ awk '
 /^ +[0-9,]+ +instructions +docker[/][0-9a-f]+/{ ins=$1 }
 /^ +[0-9.]+ +seconds time elapsed/ { printf "%-55s %8.3f seconds, %20s instructions \n",FILENAME,$1,ins }
 ' $(ls -rt */*)
-)
+) | tee sum-$(date +%Y%m%d%H%M).txt
 

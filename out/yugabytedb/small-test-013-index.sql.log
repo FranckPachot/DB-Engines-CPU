@@ -4,7 +4,7 @@ CREATE INDEX
 
  Performance counter stats for 'system wide':
 
-    23,343,848,866      instructions              docker/a754a646b3b28e6bc2bd39ea2a9e75f8071efcb7046d706f5df540e1899727b6                                   
+    21,730,339,206      instructions              docker/12568465af51b1f3b13bc78a2beee316a1860724a201f26df32191ac9c2cc550                                   
 
-      10.451827819 seconds time elapsed
+      10.277897636 seconds time elapsed
 

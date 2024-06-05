@@ -2,16 +2,12 @@ Container db-engines-cpu-yugabytedb-1  Running
 insert into demo(value) select generate_series from generate_series(1,100000);
 INSERT 0 100000
 vacuum;
-WARNING:  'vacuum' is a beta feature!
-LINE 1: vacuum;
-        ^
-HINT:  Set 'ysql_beta_features' yb-tserver gflag to true to suppress the warning for all beta features.
+NOTICE:  VACUUM is a no-op statement since YugabyteDB performs garbage collection of dead tuples automatically
 VACUUM
-WARNING:  VACUUM will be ignored
 
  Performance counter stats for 'system wide':
 
-    26,726,907,901      instructions              docker/a754a646b3b28e6bc2bd39ea2a9e75f8071efcb7046d706f5df540e1899727b6                                   
+    26,626,544,062      instructions              docker/12568465af51b1f3b13bc78a2beee316a1860724a201f26df32191ac9c2cc550                                   
 
-       5.567848778 seconds time elapsed
+       5.369521245 seconds time elapsed
 

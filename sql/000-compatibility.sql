@@ -9,3 +9,5 @@ begin
   ||''')';
 end;
 /
+
+select version();

@@ -1,19 +1,15 @@
 Container db-engines-cpu-yugabytedb-1  Running
 update payment set amount=amount+1;
-vacuum;
 ERROR:  relation "payment" does not exist
 LINE 1: update payment set amount=amount+1;
                ^
-WARNING:  'vacuum' is a beta feature!
-LINE 1: vacuum;
-        ^
-HINT:  Set 'ysql_beta_features' yb-tserver gflag to true to suppress the warning for all beta features.
-WARNING:  VACUUM will be ignored
+vacuum;
+NOTICE:  VACUUM is a no-op statement since YugabyteDB performs garbage collection of dead tuples automatically
 VACUUM
 
  Performance counter stats for 'system wide':
 
-       691,622,975      instructions              docker/a754a646b3b28e6bc2bd39ea2a9e75f8071efcb7046d706f5df540e1899727b6                                   
+       186,128,443      instructions              docker/12568465af51b1f3b13bc78a2beee316a1860724a201f26df32191ac9c2cc550                                   
 
-       1.695722535 seconds time elapsed
+       1.574715884 seconds time elapsed
 

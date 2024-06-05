@@ -97,7 +97,7 @@ DROP TYPE
 
  Performance counter stats for 'system wide':
 
-    14,804,556,678      instructions              docker/a754a646b3b28e6bc2bd39ea2a9e75f8071efcb7046d706f5df540e1899727b6                                   
+    10,608,239,531      instructions              docker/12568465af51b1f3b13bc78a2beee316a1860724a201f26df32191ac9c2cc550                                   
 
-      16.773265169 seconds time elapsed
+      12.113927500 seconds time elapsed
 
